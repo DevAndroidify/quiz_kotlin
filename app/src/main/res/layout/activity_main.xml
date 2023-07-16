@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/es"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUIZ APP"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        app:cardCornerRadius="40dp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                android:textColor="#221E1E"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter you name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="#221E1E"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_marginTop="20dp"
+
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_height="60dp"
+                >
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/text"
+                   android:layout_width="250dp"
+                   android:hint="NAME"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:inputType="textPersonName"
+                   android:background="#E4DDDD"
+                   android:layout_height="60dp"
+                   />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textSize="20dp"
+                android:id="@+id/submit"
+                android:textColor="@color/white"
+                android:backgroundTint="#8668BC"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
